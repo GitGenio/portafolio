@@ -82,18 +82,15 @@ h2{
     color: rgb(199, 67, 67);
     margin: 40px;
 }
-
 .footer-txt{
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .footer-txt img{
     width: 50px;
 }
-
+/* 
 .links{
     padding: 50px 0px;
     text-align: center;
@@ -102,13 +99,10 @@ h2{
     display: flex;
     justify-content: space-between;
     width: 500px;
-}
-/* .links p{
-    color: #a1a1a1;
-    margin-top: 25px;
 } */
+
 /*  modifica el color de los enlaces */
-.links ul li a{
+/* .links ul li a{
     color: rgb(199, 67, 67);
 }
 .links ul li a:hover{
@@ -120,4 +114,36 @@ h2{
 .socials img{
     width: 25px;
     margin: 15px; 
+} */
+
+.links{
+    padding: 10px 0px 50px;
+    text-align: center;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.links p{
+    color: rgb(19, 10, 10);
+}
+.socials{
+    display: flex;
+    justify-content: space-around;
+}
+.socials a{   
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+    font-size: 20px;
+    line-height: 40px;
+    color: whitesmoke;    
+    border-radius: 50%;
+    background-color: #4343c0;
+    box-shadow: 2px  2px 3px rgb(199, 67, 67);
+   
+}
+.socials a:hover{
+transform: scale(1.2);
 }
