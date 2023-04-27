@@ -58,14 +58,30 @@ body {
     color: #bebebe;
 }
 .menu .navbar ul li a:hover{
-    color: #ffffff;
-   
+    color: #ffffff;   
 }
 /* efecto que abre el menú */
 #menu:checked ~ .navbar{
     display: initial;  
   
-}  
+} 
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#photo{
+    margin: 30px;
+    height: 150px;
+    border-radius: 50%;
+    transition: 1s;
+    filter: drop-shadow(5px 5px 0px rgb(153, 104, 194));    
+}
+img:hover{
+    transform: rotate(360deg);
+    background-color: rgb(153, 104, 194);
+}
+ 
 .btn-1{
     /* para poder aplicar bien margin y padding, por que los enlaces son de tipo texto*/
     display: inline-block;
@@ -78,17 +94,6 @@ body {
     box-shadow: 0 0 20px #4343c0;
 }
 .btn-1:hover{
-    background-color: rgb(153, 104, 194);
-}
-#photo{
-    margin: 30px;
-    height: 150px;
-    border-radius: 50%;
-    transition: 1s;
-    filter: drop-shadow(5px 5px 0px rgb(153, 104, 194));    
-}
-img:hover{
-    transform: rotate(360deg);
     background-color: rgb(153, 104, 194);
 }
 .header-content{
@@ -119,7 +124,7 @@ text-align: center;
 }
 
 .myProjects{
-    margin-top: 150px;
+    margin-top: 100px;
 }  
 .myProjects-title img{
     display: none;
@@ -149,6 +154,10 @@ text-align: center;
     align-items: center;
 }
 .swiper-button-prev::after{
+    font-size: 30px;
+    font-weight: bolder;    
+}
+.swiper-button-next::after{
     font-size: 30px;
     font-weight: bolder;    
 }
@@ -186,57 +195,28 @@ text-align: center;
 .duration{
     color: #edb40c;
     margin-left: 20px;
-}
-.backtext-txt{    
-    display: none;
-    padding: 80px 0px;
-    /* 0.45 is percentage of opacity */
-    background-image: linear-gradient(rgba(20,20,20,1),rgba(20,20,20,0.45)),url(images/pr.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-.backtext-txt h2{    
-    color: #edb312;
-    font-size: 30px;
-    /* se puede usar el grosor, porque se trajo en la fuente, al iniciar */
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 100px;
-    margin-left: 650px;
-}
-.backtext-txt p{
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 800;
-    margin-left: 650px;
-    text-transform: uppercase;
-    line-height: 100px;
-}
-.backtext-txt span{
-    color: #edb312;
-    font-size: 30px;   
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 100px;
+    margin-bottom: 20px;
 }
 hr{
     border: 1px solid #edb3129a;
+    margin-bottom: 10px;
 }
 
-.footer-txt p{
-    display: none; 
-    text-align: center;    
-}
-
-.links p{
-    display:block;    
-    color: rgb(153, 104, 194);
-    margin-top: 10px;
-}
 .links{
     padding: 30px 0px;
     text-align: center;
+}
+.links h5{
+    color: rgb(153, 104, 194);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.links p{
+    color: rgb(153, 104, 194);
+}
+.footer-txt p{
+display: none;
 }
 .socials{
     display: flex;

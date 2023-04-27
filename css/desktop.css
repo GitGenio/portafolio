@@ -1,6 +1,6 @@
-.container{
+/* .container{
     max-width:  1100px;  
-}
+} */
 .logo {
     width: 90px;
     height: 80px;
@@ -16,6 +16,7 @@
 }
 .menu h1{  
     font-size: 35px;
+    margin-bottom: 20px;
 }
 .menu .navbar{
     position: relative;
@@ -34,113 +35,57 @@
    color: rgb(153, 104, 194);
    display: block;
 }
-.menu .navbar ul li a:hover{
-      color: #ffffff; 
-}
-
-
 .header-content{
     display: flex;
-    margin-top: 100px; 
-    height: 450px;
-    align-items: center;
+    margin-top: 0;  
+    margin-bottom: 50px;  
+    justify-content: center;
 }
-.principal{
-    display: block;
-    align-items: center; 
-    max-width: 750px;    
+.header-content h1{
+margin-bottom: 20px;
+}
+.principal-title-response{
+    display: none;
 }
 .principal-title{
+    display: contents;
     font-size: 35px;
-    line-height: 70px;
     font-weight: 600;
-    color: #4343c0;
-    margin-bottom: 25px;
+    color: #4343c0; 
+    height: 50px;
+}
+.principal-txt-response{
+    display: none;
 }
 .principal-txt{
+    display: contents;
     width: 70%;
     font-size: 20px;
     color: #e7d8d8;
 }
-
-#photo{
-    height: 250px;
-    border-radius: 50%;
-    transition: 1s;
-    perspective: 50px;
-    filter: drop-shadow(5px 5px 0px rgb(153, 104, 194));    
-}
-img:hover{
-    transform: rotate(360deg);
-    background-color: #edb312;
-}
 .btn-1{
-    /* para poder aplicar bien margin y padding, por que los enlaces son de tipo texto*/
     display: inline-block;
-    background-color: #4343c0;
-    margin-top: 25px;
-    padding: 13px 30px;
-    border-radius: 25px;
-    color: #ffffff;
-    text-transform: capitalize;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.btn-1:hover{
-    background-color: rgb(153, 104, 194);
+#photo{
+    height: 250px; 
+    perspective: 50px;
+}
+.myProjects{
+    margin-top: 0px;
+    padding: 0;
+}  
+.myProjects-title img{
+    display:inline;
 }
 .myProjects-title{
-    display: flex;    
-    align-items: center;
-    justify-content: center;
-    height: 150px;  
-    margin-bottom: 100px;  
+    margin-bottom: 100px;   
 }
-.myProjects-title h3{ 
-    background-color: rgb(153, 104, 194); 
-    color: #edb40c;
-    padding: 13px 70px;
-    border-radius: 10px;  
-    margin-bottom: 50px; 
-}
-.myProjects-title h3:hover{ 
-    color: #11110e;
-}
+
 .swiper-slide{
     font-size: 18px;
-    background-color: #121418;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.swiper-button-prev::after{
-    font-size: 25px;
-    font-weight: bolder;    
-}
-.swiper-button-next::after{
-    font-size: 25px;
-    font-weight: bolder;
-}
-.swiper-button-next{
-    color: rgb(153, 104, 194);
-}
-.swiper-button-prev{
-    color: rgb(153, 104, 194);
-}
-/* this class is included inside library of swiper */
-.swiper-pagination-bullet{
-    background-color: #747474;
-    opacity: 1;
-} 
-.swiper-pagination-bullet-active{
-    background-color: #edb312;
-} 
 .slider{
    width: 900px;       
-}
-.enlace{
-    display: inline-block;
-    color: #edb40c;
-    margin-top: 15px;
 }
 
 .project img{
@@ -149,26 +94,16 @@ img:hover{
 .project img:hover{
     height: 250px;    
 }
-.project-txt{
-    margin-top: 25px;
-}
 .project-txt h4{
-    color: #edb40c;
-    font-size: 20px;
     margin: 0;
 }
 .project-txt p{
-    color: #a1a1a1;
-    font-size: 16px;
     margin: 0;
 }
-.duration{
-    color: #edb40c;
-}
-.backtext{
+.backtext-txt{  
     padding: 80px 0px;
     /* 0.45 is percentage of opacity */
-    background-image: linear-gradient(rgba(20,20,20,1),rgba(20,20,20,0.45)),url(images/pr.png);
+    background-image: linear-gradient(rgba(20,20,20,1),rgba(20,20,20,0.45)),url(../images/pr.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size:cover;
@@ -197,12 +132,7 @@ img:hover{
     text-transform: uppercase;
     line-height: 100px;
 }
-.info{
-    text-align: right;
-}
-hr{
-    border: 1px solid #edb3129a;
-}
+
 .footer p{
     text-align: center;
     color: #e7d8d8;
@@ -215,41 +145,12 @@ hr{
     align-items: center;
 }
 
-.links{
-    padding: 10px 0px 50px;
-    text-align: center;
-}
-.links ul{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-}
-.links p{
-    color: rgb(153, 104, 194);
-    /* margin-top: 10px; */
-}
-/*  modifica el color de los enlaces */
-.links ul li a{
-    color: rgb(153, 104, 194);
-}
-.links ul li a:hover{
-    color: #d7c92f;
-}
-.socials{
-    display: flex;
-    justify-content: space-around;
-}
+
 .socials a{   
     width: 40px;
     height: 40px;
-    margin: 30px;
-    font-size: 20px;
-    line-height: 40px;
-    color: whitesmoke;    
-    border-radius: 50%;
-    background-color: #4343c0;
-    box-shadow: 2px  2px 3px #d7c92f;
-   
+    margin: 30px;  
+    line-height: 40px;   
 }
 .socials a:hover{
 transform: scale(1.2);
