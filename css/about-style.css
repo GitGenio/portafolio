@@ -1,0 +1,12 @@
+*{ 
+    color: blue;  
+}
+.h1-name{     
+    display: none;      
+}
+.h1-response{     
+    display: contents; 
+}
+.introduction p{
+    margin: 10px;
+}

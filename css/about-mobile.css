@@ -1,0 +1,46 @@
+*{ 
+    color: green;  
+}
+.h1-response{  
+    display: none;
+}
+
+/* .navbar{
+    display: none;
+} */
+
+
+.menu-icono{
+    width: 30px;
+    margin-right: 20px;
+}
+#menu{
+    display: none;
+}
+.menu label{
+    cursor: pointer;
+    z-index: 1000;
+    display: contents;
+}
+.menu .navbar{
+    position: absolute;
+    top: 15vw;
+    left: 5px;
+    right: 20px;
+    background-color: #4343c0;
+    display: none; 
+}
+.menu .navbar ul li{
+    width: 100%;    
+   }
+.menu .navbar ul li a{  
+    margin-left: 20px;      
+    color: #bebebe;
+}
+.menu .navbar ul li a:hover{
+    color: #ffffff;   
+}
+/* efecto que abre el menú */
+#menu:checked ~ .navbar{
+    display: initial;    
+} 

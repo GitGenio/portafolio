@@ -21,9 +21,9 @@ body {
     margin: 0 auto;
 }
 .logo {
-
     width: 60px;
     border-radius: 30%; 
+    margin: 10px;
 }
 .menu{
     position: absolute;
@@ -38,13 +38,10 @@ body {
 .menu h1{  
     color: rgb(176, 51, 51);   
 }
-.menu .h1-response{ 
+.h1-response{ 
     display: none;  
 }
 
-.box-empty{
-    width: 200px;
-}
 .menu .navbar ul li{
     position: relative;
     float: left;
@@ -90,32 +87,6 @@ h2{
 .footer-txt img{
     width: 50px;
 }
-/* 
-.links{
-    padding: 50px 0px;
-    text-align: center;
-}
-.links ul{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-} */
-
-/*  modifica el color de los enlaces */
-/* .links ul li a{
-    color: rgb(199, 67, 67);
-}
-.links ul li a:hover{
-    color: #d7c92f;
-}
-.socials{
-    margin-top: 30px; 
-}
-.socials img{
-    width: 25px;
-    margin: 15px; 
-} */
-
 .links{
     padding: 10px 0px 50px;
     text-align: center;
